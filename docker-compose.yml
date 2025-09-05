@@ -70,11 +70,11 @@ services:
       - postgres
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-      POSTGRES_HOST: postgres
-      POSTGRES_PORT: 5432
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: pgpass007
-      POSTGRES_DB: heartbeats
+      POSTGRES_HOST: *******
+      POSTGRES_PORT: ****
+      POSTGRES_USER: ******
+      POSTGRES_PASSWORD: *******
+      POSTGRES_DB: *******
     volumes:
       - ./kafka_client:/app
     networks:
