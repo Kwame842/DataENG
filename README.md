@@ -1,10 +1,12 @@
-# 🚀 PySpark Streaming to PostgreSQL with Docker
+# PySpark Streaming to PostgreSQL with Docker
 
 This project demonstrates how to stream CSV files into a PostgreSQL database using **Apache Spark (Structured Streaming)** inside Docker containers. It continuously watches a folder for new CSV files, reads them using PySpark, and appends the data to a table in PostgreSQL.
 
 ---
 
-## 🗂 Project Structure
+![Architecture](Diagram/Flow%20Diagram.png)
+
+## Project Structure
 
 ```
 .
@@ -21,7 +23,7 @@ This project demonstrates how to stream CSV files into a PostgreSQL database usi
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - **Apache Spark** (Structured Streaming)
 - **PostgreSQL**
@@ -30,7 +32,7 @@ This project demonstrates how to stream CSV files into a PostgreSQL database usi
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 Ensure you have the following installed:
 
@@ -39,13 +41,13 @@ Ensure you have the following installed:
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 Follow these steps to set up and run the project:
 
 ---
 
-### 1. 📁 Clone or Download the Project
+### 1. Clone or Download the Project
 
 ```bash
 git clone https://github.com/Kwame842/DataENG/Spark_Streaming.git
@@ -56,7 +58,7 @@ Or manually download and extract the ZIP.
 
 ---
 
-### 2. 📄 Place Your CSV Files
+### 2. Place Your CSV Files
 
 Put your `.csv` files inside the `ecommerce_events/` folder.
 
@@ -66,7 +68,7 @@ Each CSV should have the following columns:
 
 ---
 
-### 3. 🛠 Build and Run the Docker Containers
+### 3. Build and Run the Docker Containers
 
 ```bash
 docker-compose build
@@ -81,7 +83,7 @@ This will:
 
 ---
 
-### 4. 🗃 PostgreSQL Details
+### 4. PostgreSQL Details
 
 Once running, the PostgreSQL database is available at:
 
@@ -97,7 +99,7 @@ The data is inserted into a table called `events`.
 
 ---
 
-### 5. 📊 Confirm the Data
+### 5. Confirm the Data
 
 Connect to the database and run:
 
@@ -109,7 +111,7 @@ To verify data from your CSVs is successfully loaded.
 
 ---
 
-## 🔁 Workflow
+## Workflow
 
 - The script runs in an infinite loop.
 - Every 5 seconds, it checks the `ecommerce_events/` folder.
@@ -118,7 +120,7 @@ To verify data from your CSVs is successfully loaded.
 
 ---
 
-## 🛑 To Stop the Containers
+## To Stop the Containers
 
 ```bash
 docker-compose down
@@ -128,13 +130,13 @@ This will stop and remove the containers.
 
 ---
 
-## ✅ Example Use Case
+## Example Use Case
 
 You can simulate a data stream by gradually dropping `.csv` files into the `ecommerce_events/` folder. Spark will process each as it appears.
 
 ---
 
-## 🧹 Cleaning Up
+## Cleaning Up
 
 To remove all Docker data (containers, images, volumes):
 
@@ -146,12 +148,12 @@ Use with caution.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
