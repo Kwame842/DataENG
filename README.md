@@ -1,22 +1,22 @@
 
 # TMDB Movie Data Analysis with PySpark
 
-## 📌 Project Overview
+## Project Overview
 This project analyzes movie data from The Movie Database (TMDB) API using PySpark. It includes data extraction, cleaning, transformation, and analysis of key performance metrics for movies.
 
-## ✨ Features
+## Features
 - 📦 API data extraction from TMDB
 - 🧹 Data cleaning and preprocessing pipeline
 - 📊 Key performance indicator (KPI) analysis
 - 🎞️ Franchise vs standalone movie comparison
 - 📈 Data visualization using PySpark and other libraries
 
-## 🧰 Prerequisites
+## Prerequisites
 - Python 3.8+
 - Apache Spark with PySpark
 - A TMDB API Key
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -33,7 +33,7 @@ This project analyzes movie data from The Movie Database (TMDB) API using PySpar
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Option 1: JSON Configuration File (Recommended)
 1. Get a free API key from [TMDB](https://www.themoviedb.org/documentation/api).
@@ -74,7 +74,7 @@ API_KEY = args.api_key
 
 ---
 
-## 🧪 Usage
+## Usage
 
 ### For Exploration
 Run the Jupyter notebook:
@@ -90,7 +90,7 @@ spark-submit src/main.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 tmdb-movie-analysis/
 │
@@ -102,20 +102,21 @@ tmdb-movie-analysis/
 ├── requirements.txt  # Project dependencies
 └── README.md         # Project overview and documentation
 ```
+![Visuals](visuals/PySpark-Movie-Data-Analysis-Visuals.png)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
 
 ---
 
-## 📂 .gitignore Highlights
+## .gitignore Highlights
 
 **Sensitive Files**
 ```
@@ -162,7 +163,7 @@ derby.log
 
 ---
 
-## 🔐 How to Handle API Keys Securely
+## How to Handle API Keys Securely
 
 ### Best Practices
 1. **Never commit API keys to source control.**
