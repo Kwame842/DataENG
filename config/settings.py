@@ -14,16 +14,16 @@ DB_CONFIG = {
     'mysql': {
         'host': os.getenv('MYSQL_HOST', 'mysql'),
         'port': int(os.getenv('MYSQL_PORT', 3306)),
-        'user': os.getenv('MYSQL_USER', 'airflow'),
-        'password': os.getenv('MYSQL_PASSWORD', 'airflow'),
-        'database': os.getenv('MYSQL_STAGING_DB', 'flight_staging')
+        'user': os.getenv('MYSQL_USER', 'YOUR_USER'),
+        'password': os.getenv('MYSQL_PASSWORD', 'YOUR_PASSWORD'),
+        'database': os.getenv('MYSQL_STAGING_DB', 'YOUR_DB')
     },
     'postgresql': {
         'host': os.getenv('POSTGRES_HOST', 'postgres'),
         'port': int(os.getenv('POSTGRES_PORT', 5432)),
-        'user': os.getenv('POSTGRES_USER', 'airflow'),
-        'password': os.getenv('POSTGRES_PASSWORD', 'airflow'),
-        'database': os.getenv('POSTGRES_ANALYTICS_DB', 'flight_analytics')
+        'user': os.getenv('POSTGRES_USER', 'YOUR_PG_USER'),
+        'password': os.getenv('POSTGRES_PASSWORD', 'YOUR_POSTGRES_PASSWORD'),
+        'database': os.getenv('POSTGRES_ANALYTICS_DB', 'YOUR_PG_DB')
     }
 }
 
