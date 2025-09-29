@@ -1,6 +1,8 @@
 # ✈️ Airflow Project – Flight Price Analysis (Bangladesh)
 
 This project sets up an end-to-end **Apache Airflow pipeline** using **Docker Compose**, designed to process and analyze **flight price data for Bangladesh**. The pipeline supports:
+![Architecture](diagram/Flight_Price_Analysis_Pipeline.png)
+
 
 - MySQL as a **staging** database
 - PostgreSQL as the **analytics** database
@@ -8,7 +10,7 @@ This project sets up an end-to-end **Apache Airflow pipeline** using **Docker Co
 
 ---
 
-## 📊 Project Goals
+## Project Goals
 
 Build a data pipeline that:
 
@@ -19,7 +21,7 @@ Build a data pipeline that:
 
 ---
 
-## 🧱 Technologies
+## Technologies
 
 - **Airflow** (orchestration)
 - **Docker & Docker Compose**
@@ -30,7 +32,7 @@ Build a data pipeline that:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -54,7 +56,7 @@ Build a data pipeline that:
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🗃 **Ingestion** of raw CSV into MySQL
 - 🧹 **Validation**: Data type checks, null handling, business rules
@@ -70,14 +72,14 @@ Build a data pipeline that:
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 - Docker & Docker Compose installed locally
 - Place the raw CSV file in `data/` as `Flight_Price_Dataset_of_Bangladesh.csv`
 
 ---
 
-## 🔧 Configuration Details
+## Configuration Details
 
 ### Dockerfile
 
@@ -114,7 +116,7 @@ Update `.env` or YAML as needed:
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 1. **Clone the repository**  
    ```bash
@@ -144,7 +146,7 @@ Update `.env` or YAML as needed:
 
 ---
 
-## 📈 KPI Logic & DAG Design
+## KPI Logic & DAG Design
 
 Each DAG task performs one pipeline step:
 
@@ -173,6 +175,7 @@ settings = {
 
 ---
 
+
 ## 🧹 Cleanup
 
 Stop containers and clear volumes:
@@ -183,12 +186,12 @@ docker-compose down --volumes --remove-orphans
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Have ideas or improvements? Fork and submit a pull request, or open a GitHub issue.
 
 ---
 
-## 📄 License
+## License
 
 MIT License. See `LICENSE` file.
